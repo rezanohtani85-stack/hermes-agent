@@ -526,4 +526,4 @@ ENV HERMES_PYTHON=/opt/hermes/.venv/bin/python
 # wrapper-as-ENTRYPOINT, leading-dash args like `--version` would be
 # intercepted by /init's POSIX shell.
 ENTRYPOINT [ "/opt/hermes/docker/entrypoint-dispatch.sh" ]
-CMD [ ]
+CMD ["gateway", "run"]
